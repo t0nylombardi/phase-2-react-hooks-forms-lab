@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-function Item({ name, category }) {
+const Item = ({ name, category }) => {
   const [isInCart, setIsInCart] = useState(false);
 
-  function handleAddToCartClick() {
+  const handleAddToCartClick = () => {
     setIsInCart((isInCart) => !isInCart);
   }
 
